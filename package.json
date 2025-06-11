@@ -19,6 +19,7 @@
     "start-dev": "nodemon -e ts,json,ejs src/server.ts"
   },
   "dependencies": {
+    "@prisma/client": "^6.9.0",
     "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0"
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@types/ejs": "^3.1.5",
     "@types/express": "^5.0.2",
-    "@types/node": "^22.15.30"
+    "@types/node": "^22.15.30",
+    "prisma": "^6.9.0"
   }
 }
