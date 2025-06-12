@@ -1,5 +1,6 @@
 <%- include('../partials/header') %>
 
+<!-- Exibe o banner se ele estiver definido -->
 <% if (typeof banner !== 'undefined' && banner) { %>
   <section class="banner" style="background-image: url('images/<%=banner.background%>')">
     <%=banner.title%>
@@ -7,6 +8,7 @@
   <h2><%=banner.title%> disponíveis para adoção</h2>
 <% } %>
 
+<!-- Se houver animais na lista, exibe cada um -->
 <% if (list && list.length > 0) { %>
   <div class="container list">
     <% list.forEach(item => { %>    
@@ -19,6 +21,7 @@
     <% }) %>
   </div>
 <% } else { %>
+  <!-- Caso não haja animais na lista, mostra mensagem de vazio -->
   <div class="container no-list">
     <h2>Não há animais disponíveis nestas condições</h2>
   </div>

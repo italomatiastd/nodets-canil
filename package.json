@@ -13,10 +13,13 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "nodemon -e ts,json,ejs src/server.ts"
+    "start-dev": "nodemon -e ts,json,ejs src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "seed": "ts-node src/database/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.9.0",
