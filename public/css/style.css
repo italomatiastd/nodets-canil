@@ -15,7 +15,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ;
     background-color: var(--pagebg);
     color: var(--darkbg);
     line-height: 1.6;
@@ -133,8 +134,19 @@ h2 {
     margin-bottom: 50px;
 }
 
+.no-list {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 .item {
     background: #fff;
+    margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 3px 8px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -174,8 +186,6 @@ footer {
     text-align: center;
     font-size: 1rem;
     color: var(--main);
-    background: #fff;
-    box-shadow: 0 -2px 5px var(--shadow);
 }
 
 /* RESPONSIVO */
